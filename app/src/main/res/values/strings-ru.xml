@@ -1,0 +1,73 @@
+<resources>
+    <string name="app_name">Машенька</string>
+    <string name="hello_world">Hello world!</string>
+
+    <string name="action_settings">Настройки</string>
+    <string name="settings_megadevice">Устройства</string>
+    <string name="callback">Заказ звонка</string>
+
+    <string name="action_voice">Голосовое управление</string>
+
+    <!-- Меню контекстное на карточке Мегадевайса -->
+    <string name="add_item">Добавить</string>
+    <string name="edit_item">Изменить</string>
+    <string name="del_item">Удалить</string>
+    <string name="list_elements">Элементы</string>
+
+    <!-- Форма редактирования Мегадевайса -->
+    <string name="tv_megadevice_item">Название</string>
+    <string name="tv_megadevice_ipaddr">IP адрес</string>
+    <string name="tv_megadevice_pwd">Пароль</string>
+    <string name="btn_save">Сохранить</string>
+    <string name="btn_cancel">Отмена</string>
+    <string name="btn_delete">УДАЛИТЬ</string>
+
+
+<!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="title_activity_settings_megadevices">Устройства</string>
+
+    <string name="title_activity_card_megadevice">CardMegadevice</string>
+    <string name="title_activity_mega_device_edit">MegaDeviceEdit</string>
+
+    <string name="element_door">Входная дверь</string>
+    <string name="element_main_light">Основное освещение</string>
+    <string name="element_fan">Вытяжка</string>
+
+<!-- ERROR: messages -->
+    <string name="wifi_not_allowed">Нет подключения к разрешенной Wi-Fi точке!</string>
+    <string name="megadevice_item_hint">Наименование устройства</string>
+    <string name="megadevice_ipaddr_hint">Адрес устройства</string>
+    <string name="megadevice_pwd_hint">Пароль</string>
+    <string name="title_activity_elements">ElementsActivity</string>
+    <string name="device">Устройство:</string>
+    <string name="element">Элемент управления:</string>
+    <string name="megadevice_desc_hint">Описание устройства</string>
+    <string name="title_activity_element_edit">ElementEditActivity</string>
+    <string name="port_hint">Порт</string>
+    <string name="settings_menu">Меню</string>
+    <string name="settings_main">Настройки</string>
+    <string name="title_activity_menu">MenuActivity</string>
+    <string name="title_activity_menu_edit">MenuEditActivity</string>
+    <string name="title_activity_words">WordsActivity</string>
+    <string name="menu_item_hint">Пункт меню</string>
+
+    <string name="dialog_delete_device">Удалить устройство?</string>
+    <string name="dialog_delete_element">Удалить элемент управления?</string>
+    <string name="dialog_delete_menu">Удалить пункт меню?</string>
+    <string name="dialog_delete_word">Удалить слово?</string>
+    <string name="dialog_add_word">Добавление слова</string>
+    <string name="dialog_add">ДОБАВИТЬ</string>
+    <string name="dialog_delete">УДАЛИТЬ</string>
+    <string name="dialog_cancel">ОТМЕНА</string>
+    <string name="dialog_save">СОХРАНИТЬ</string>
+    <string name="dialog_words">СЛОВА</string>
+
+    <string name="new_device">Новое устройство</string>
+    <string name="new_device_desc">Опишите устройство, что оно будет делать, где установлено</string>
+    <string name="new_element">Новый элемент</string>
+    <string name="new_element_desc">Опишите элемент управления, чем управляет, где находится</string>
+    <string name="new_menu">Новый пункт меню</string>
+
+
+</resources>

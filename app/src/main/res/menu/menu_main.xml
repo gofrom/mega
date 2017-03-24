@@ -1,0 +1,12 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools" tools:context=".MainActivity">
+    <item android:id="@+id/action_menu" android:title="@string/settings_menu"
+        android:orderInCategory="100" app:showAsAction="never" />
+    <item android:id="@+id/action_megadevice" android:title="@string/settings_megadevice"
+        android:orderInCategory="101" app:showAsAction="never" />
+    <item android:id="@+id/action_settings" android:title="@string/settings_main"
+        android:orderInCategory="102" app:showAsAction="never" />
+    <item android:id="@+id/action_voice" android:title="@string/action_voice"
+        app:showAsAction="ifRoom" android:icon="@drawable/ic_microphone_black" />
+</menu>

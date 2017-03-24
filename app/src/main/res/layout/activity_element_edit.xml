@@ -1,0 +1,137 @@
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="fill_parent">
+
+
+<LinearLayout
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    tools:context="pro.gofman.toolbar.MegaDeviceEdit"
+    android:layout_centerInParent="true"
+    android:isScrollContainer="true">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="32dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginRight="16dp">
+
+        <com.rey.material.widget.EditText
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:hint="@string/megadevice_item_hint"
+            android:id="@+id/et_element_item"
+            app:et_inputId="@+id/lbl_element_item"
+            android:textSize="14sp"
+            />
+
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginRight="16dp">
+
+        <com.rey.material.widget.EditText
+            android:id="@+id/et_element_desc"
+            app:et_inputId="@+id/lbl_element_desc"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:hint="@string/megadevice_desc_hint"
+            android:inputType="textMultiLine"
+            android:textSize="14sp"
+            />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="16dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginRight="16dp">
+
+        <com.rey.material.widget.Spinner
+            android:id="@+id/sp_element"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:minWidth="128dp"
+            app:spn_label="Тип элемента"
+            app:v_styleId="@style/LightSpinner"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="16dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginRight="16dp">
+
+       <com.rey.material.widget.EditText
+           android:id="@+id/et_element_port"
+           app:et_inputId="@+id/lbl_element_port"
+           android:layout_width="match_parent"
+           android:layout_height="wrap_content"
+           android:hint="@string/port_hint"
+           android:inputType="number"
+           android:textSize="14sp"/>
+
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="16dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginRight="16dp">
+
+        <com.rey.material.widget.Spinner
+            android:id="@+id/sp_element_menu"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:minWidth="128dp"
+            app:spn_label="Пункт меню"
+            app:v_styleId="@style/LightSpinner"/>
+
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_margin="16dp">
+
+        <com.rey.material.widget.Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/dialog_save"
+            android:id="@+id/btn_element_ok"
+            android:layout_marginLeft="8dp"
+            style="?android:attr/borderlessButtonStyle"
+            android:textColor="@color/material_drawer_primary_dark"
+            android:layout_marginTop="16dp"
+            android:textSize="13sp"/>
+
+        <com.rey.material.widget.Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/dialog_cancel"
+            android:id="@+id/btn_element_cancel"
+            style="?android:attr/borderlessButtonStyle"
+            android:textColor="@color/material_drawer_primary_dark"
+            android:textSize="13sp"
+            android:layout_marginTop="16dp"
+            android:layout_marginLeft="16dp"/>
+    </LinearLayout>
+</LinearLayout>
+</ScrollView>
