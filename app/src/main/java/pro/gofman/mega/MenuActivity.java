@@ -17,7 +17,7 @@ public class MenuActivity extends AppCompatActivity {
 
     protected static final int EDIT_MENU = 1;
 
-    pro.gofman.toolbar.Menu mn;
+    pro.gofman.mega.Menu mn;
     private RecyclerView rvMenu;
     private MenuAdapter adMenu;
     private RecyclerView.LayoutManager lmMenu;
@@ -33,7 +33,7 @@ public class MenuActivity extends AppCompatActivity {
         rvMenu.setLayoutManager(lmMenu);
 
 
-        mn = new pro.gofman.toolbar.Menu(MainActivity.db);
+        mn = new pro.gofman.mega.Menu(MainActivity.db);
 
 
 
@@ -57,7 +57,7 @@ public class MenuActivity extends AppCompatActivity {
 
 
     private void clickAddMenu() {
-        mn.setType( pro.gofman.toolbar.Menu.TYPE_MEGADEVICE );
+        mn.setType( pro.gofman.mega.Menu.TYPE_MEGADEVICE );
         mn.setItem(getResources().getString(R.string.new_menu));
 
         mn.addItem();
@@ -72,8 +72,8 @@ public class MenuActivity extends AppCompatActivity {
                 if (resultCode == RESULT_OK && null != data) {
 
                     int save = data.getIntExtra(MenuEditActivity.SAVE_MENU, 0);
-                    int pos = data.getIntExtra(pro.gofman.toolbar.Menu.MENUPOS, 0);
-                    int id = data.getIntExtra(pro.gofman.toolbar.Menu.MENUID, 0);
+                    int pos = data.getIntExtra(pro.gofman.mega.Menu.MENUPOS, 0);
+                    int id = data.getIntExtra(pro.gofman.mega.Menu.MENUID, 0);
                     Log.d("onActivityResult", String.valueOf(save) + " : " + String.valueOf(pos));
 
                     mn.setID(id);

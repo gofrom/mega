@@ -70,7 +70,7 @@ public class ElementEditActivity extends AppCompatActivity {
         mElType.setAdapter(adElType);
 
 
-        ArrayAdapter<String> adElMenu = new ArrayAdapter<String>(this, R.layout.row_spinner, new pro.gofman.toolbar.Menu(MainActivity.db).getMenuItemsByType( pro.gofman.toolbar.Menu.TYPE_MEGADEVICE ));
+        ArrayAdapter<String> adElMenu = new ArrayAdapter<String>(this, R.layout.row_spinner, new pro.gofman.mega.Menu(MainActivity.db).getMenuItemsByType( pro.gofman.mega.Menu.TYPE_MEGADEVICE ));
         mElMenu.setAdapter(adElMenu);
         mElMenu.applyStyle(R.style.LightSpinner);
         mElMenu.setSelection( el.getMenuID()-1 );

@@ -36,7 +36,7 @@ public class MenuEditActivity extends AppCompatActivity {
             "Неопределено", "Устройство", "Заказ звонка"
     };
 
-    private pro.gofman.toolbar.Menu mn = null;
+    private pro.gofman.mega.Menu mn = null;
     private int pos = 0;
 
 
@@ -46,8 +46,8 @@ public class MenuEditActivity extends AppCompatActivity {
         setContentView(R.layout.activity_menu_edit);
 
         Intent intent = getIntent();
-        pos = intent.getIntExtra( pro.gofman.toolbar.Menu.MENUPOS, 0 );
-        mn = new pro.gofman.toolbar.Menu(MainActivity.db, intent.getIntExtra( pro.gofman.toolbar.Menu.MENUID, 0));
+        pos = intent.getIntExtra( pro.gofman.mega.Menu.MENUPOS, 0 );
+        mn = new pro.gofman.mega.Menu(MainActivity.db, intent.getIntExtra( pro.gofman.mega.Menu.MENUID, 0));
 
         final EditText et_item = (EditText) findViewById(R.id.et_menu_item);
         et_item.applyStyle(R.style.LightEditText);
@@ -180,8 +180,8 @@ public class MenuEditActivity extends AppCompatActivity {
             Intent intent = new Intent();
 
             intent.putExtra(SAVE_MENU, r);
-            intent.putExtra(pro.gofman.toolbar.Menu.MENUPOS, pos);
-            intent.putExtra(pro.gofman.toolbar.Menu.MENUID, mn.getID());
+            intent.putExtra(pro.gofman.mega.Menu.MENUPOS, pos);
+            intent.putExtra(pro.gofman.mega.Menu.MENUID, mn.getID());
 
             setResult(RESULT_OK, intent);
         }

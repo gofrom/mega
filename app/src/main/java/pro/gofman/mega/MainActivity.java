@@ -54,6 +54,7 @@ public class MainActivity extends AppCompatActivity {
     // protected static final
 
     protected static SQLiteDatabase db;
+    //protected static DB db;
     FragmentTransaction ft;
 
     protected static WifiManager wifi;
@@ -89,10 +90,11 @@ public class MainActivity extends AppCompatActivity {
         toolbar = (Toolbar) findViewById(R.id.toolbar);
 
         // Подключаем базу данных
-        db = new DatabaseHandler( this ).getWritableDatabase();
+        // db = new DatabaseHandler( this ).getWritableDatabase();
+        db = new DB(getApplicationContext()).mDatabase;
 
         // Включаем WIFI если выключен
-        wifi = (WifiManager) getSystemService(Context.WIFI_SERVICE);
+        wifi = (WifiManager) getSystemService(Mega.WIFI_SERVICE);
         if (wifi.getWifiState() == WifiManager.WIFI_STATE_DISABLED ) {
             wifi.setWifiEnabled(true);
         }

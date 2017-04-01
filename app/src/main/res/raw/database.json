@@ -1,0 +1,235 @@
+{
+    "database": "mega",
+    "version": 1,
+    "tables": [{
+            "table": "options",
+            "description": "Служебная таблица для хранения настроеек",
+            "fields": [{
+                    "field": "_id",
+                    "type": "integer",
+                    "description": "ID",
+                    "primary_key": true
+                },
+                {
+                    "field": "key",
+                    "type": "text",
+                    "description": "Информация об опции"
+                },
+                {
+                    "field": "value",
+                    "type": "text",
+                    "description": "Содержимое настройки в формате JSON"
+                }
+            ],
+            "values": [{
+                "_id": 1,
+                "key": "wifi_allowed",
+                "value": ""
+            }]
+        },
+        {
+            "table": "mega_devices",
+            "description": "Список мегадевайсов",
+            "fields": [{
+                    "field": "_id",
+                    "type": "integer",
+                    "description": "ID справочника мегадевайса",
+                    "primary_key": true
+                },
+                {
+                    "field": "item",
+                    "type": "text",
+                    "description": "Наименование мегадевайса"
+                },
+                {
+                    "field": "desc",
+                    "type": "text",
+                    "description": "Описание, расположение мегадевайса"
+                },
+                {
+                    "field": "ipaddr",
+                    "type": "text",
+                    "description": "IP адрес мегадевайса"
+                },
+                {
+                    "field": "port",
+                    "type": "integer",
+                    "description": "Порт"
+                },
+                {
+                    "field": "pwd",
+                    "type": "text",
+                    "description": "Пароль к мегадевайсу"
+                },
+                {
+                    "field": "ver",
+                    "type": "text",
+                    "description": "Версия прошивки мегадевайса"
+                }
+
+            ],
+            "values": [{
+                "_id": 1,
+                "item": "Мегадевайс",
+                "desc": "Один единственный, ненаглядный мой",
+                "ipaddr": "192.168.0.14",
+                "port": 80,
+                "pwd": "sec",
+                "ver": "222"
+            }]
+        },
+        {
+            "table": "menu_drawer",
+            "description": "Меню",
+            "fields": [{
+                    "field": "_id",
+                    "type": "integer",
+                    "description": "ID",
+                    "primary_key": true
+                },
+                {
+                    "field": "img",
+                    "type": "integer",
+                    "description": "Иконка пункта меню"
+                },
+                {
+                    "field": "type",
+                    "type": "integer",
+                    "description": "Тип пункта меню"
+                },
+                {
+                    "field": "item",
+                    "type": "text",
+                    "description": "Наименование пункта меню"
+                }
+            ],
+            "values": [{
+                "_id": 1,
+                "img": 1,
+                "type": 1,
+                "item": "Освещение"
+            }]
+        },
+        {
+            "table": "fragment_items",
+            "description": "Элементы управления",
+            "fields": [{
+                    "field": "_id",
+                    "type": "integer",
+                    "description": "ID",
+                    "primary_key": true
+                },
+                {
+                    "field": "menu",
+                    "type": "integer",
+                    "description": "Ссылка на элемент меню"
+                },
+                {
+                    "field": "item",
+                    "type": "text",
+                    "description": "Наименование элемента управления"
+                },
+                {
+                    "field": "desc",
+                    "type": "text",
+                    "description": "Описание элемента управления"
+                },
+                {
+                    "field": "type",
+                    "type": "integer",
+                    "description": "Тип элемента управления"
+                },
+                {
+                    "field": "dev",
+                    "type": "integer",
+                    "description": "Ссылка на Мегадевайс"
+                },
+                {
+                    "field": "port",
+                    "type": "integer",
+                    "description": "Порт на мегадевайсе"
+                }
+            ],
+            "values": [{
+                    "_id": 1,
+                    "menu": 1,
+                    "item": "Кухня",
+                    "item": "Основное освещение на кухне",
+                    "type": 0,
+                    "dev": 1,
+                    "port": 7
+                },
+                {
+                    "_id": 2,
+                    "menu": 1,
+                    "item": "Кухня",
+                    "item": "Основное освещение на кухне",
+                    "type": 0,
+                    "dev": 1,
+                    "port": 8
+                },
+                {
+                    "_id": 3,
+                    "menu": 1,
+                    "item": "Кухня",
+                    "item": "Основное освещение на кухне",
+                    "type": 0,
+                    "dev": 1,
+                    "port": 9
+                }, {
+                    "_id": 4,
+                    "menu": 1,
+                    "item": "Кухня",
+                    "item": "Основное освещение на кухне",
+                    "type": 0,
+                    "dev": 1,
+                    "port": 10
+                }, {
+                    "_id": 5,
+                    "menu": 1,
+                    "item": "Кухня",
+                    "item": "Основное освещение на кухне",
+                    "type": 0,
+                    "dev": 1,
+                    "port": 11
+                }, {
+                    "_id": 6,
+                    "menu": 1,
+                    "item": "Кухня",
+                    "item": "Основное освещение на кухне",
+                    "type": 0,
+                    "dev": 1,
+                    "port": 12
+                }, {
+                    "_id": 7,
+                    "menu": 1,
+                    "item": "Кухня",
+                    "item": "Основное освещение на кухне",
+                    "type": 0,
+                    "dev": 1,
+                    "port": 13
+                },
+            ]
+        },
+        {
+            "table": "words",
+            "description": "Набор слов для распознавания речи",
+            "fields": [{
+                    "field": "_id",
+                    "type": "integer",
+                    "description": "ID",
+                    "primary_key": true
+                }, {
+                    "field": "el",
+                    "type": "integer",
+                    "description": "Ссылка на элемент управления"
+                },
+                {
+                    "field": "item",
+                    "type": "text",
+                    "description": "Фрагмент слова"
+                }
+            ]
+        }
+    ]
+}
